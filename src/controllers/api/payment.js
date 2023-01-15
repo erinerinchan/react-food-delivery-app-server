@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 import Stripe from 'stripe'
 
-const stripe = Stripe('sk_test_51M315gB4AFqtgwWUQjrIDzwfQVhRkFk3CqQECeyzKextiKBl7VCLfJSYjxNrQjhxhcEXio5OAGxGbjJDaEHz38Va00V7vA3Z3M')
+const stripe = Stripe(process.env.STRIPE_SECRET_KEY)
 
 const createPaymentIntent = async (req, res) => {
   console.log('--- Creating Payment Intent')
