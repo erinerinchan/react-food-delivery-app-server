@@ -1,5 +1,5 @@
+import 'dotenv/config'
 import mongoose from 'mongoose'
-
 import restaurantSchema from '../../schemas/restaurant.js'
 import foodSchema from '../../schemas/food.js'
 import mealSchema from '../../schemas/meal.js'

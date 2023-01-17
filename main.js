@@ -14,7 +14,7 @@ const port = process.env.PORT || 3000 // The port number our server runs on
 // Prints out request information
 app.use(morgan('tiny'))
 
-// Give forms the ability to use DELETE and PUT method
+// Give forms the ability to use DELETE and PUT methodx
 app.use(methodOverride('_method'))
 
 app.use(ironSession({
