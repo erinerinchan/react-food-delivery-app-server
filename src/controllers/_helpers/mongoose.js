@@ -8,7 +8,7 @@ import dietarySchema from '../../schemas/dietary.js'
 import userSchema from '../../schemas/user.js'
 
 const main = async () => {
-  await mongoose.connect('mongodb+srv://erin:1997Ad1E@cluster0.pi3ir.mongodb.net/?retryWrites=true&w=majority')
+  await mongoose.connect(process.env.MONGODB_URI)
 }
 
 // eslint-disable-next-line
